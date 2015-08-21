@@ -3,7 +3,6 @@ class GroupsController < ApplicationController
     before_action :find_current_user, only: [:edit, :update, :destroy]
     
     def index
-        #flash[:notice] = "早安！你好！"
         @groups = Group.all
     end
     
